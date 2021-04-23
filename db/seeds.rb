@@ -15,4 +15,4 @@ Ingredient.create!(name: 'lemon');
 Ingredient.create!(name: 'ice');
 Ingredient.create!(name: 'vodka')
 
-puts  "Ingredient is created!"
+puts  "Ingredient is created!" 
