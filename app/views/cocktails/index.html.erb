@@ -1,10 +1,15 @@
 
 
-<div class="cocktails-header d-flex justify-content-space-around">
-<%= image_tag "Bar_Code.png", alt: "logo", width:70, height: 50 %>
-    <%= link_to "Add cocktail", new_cocktail_path %>
+<div class="cocktails-header d-flex justify-content-space-around flex-row">
+    <div class="cocktail-header-nav">
+        <%= image_tag "cocktail.png", alt: "logo", width:70, height: 50 %>
+        <%= link_to "Add cocktail", new_cocktail_path %>
+    </div>
 </div>
 
+<div class="cocktails-banner">
+    <%= image_tag 'pexels-picography-4784.jpg', alt: 'banner', width:900, height:500 %>
+</div>
 <div class="main-cocktails">
     <ul class="main-cocktails-list">
         <% @cocktails.each do |cocktail| %>
