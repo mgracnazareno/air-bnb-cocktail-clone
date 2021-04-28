@@ -11,12 +11,14 @@
     <%= image_tag 'pexels-picography-4784.jpg', alt: 'banner', width:900, height:500 %>
 </div>
 <div class="main-cocktails">
-    <ul class="main-cocktails-list">
-        <% @cocktails.each do |cocktail| %>
-        <li>
-            <%= link_to cocktail.name, cocktail_path(cocktail) %>
-        </li>
-        <% end %>
-    </ul>
+    <div class="container">
+            <% @cocktails.each do |cocktail| %>
+        <div class="card">
+            <div class="card-item">
+                <%= link_to cocktail.name, cocktail_path(cocktail) %>
+            </div>
+        </div>
+    </div>
+     <% end %>
 </div>
 

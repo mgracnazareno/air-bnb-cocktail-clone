@@ -10,7 +10,7 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new
   end
   
-  def create 
+  def create
     @cocktail = Cocktail.find(cocktail_params)
     
     if @cocktail.save
