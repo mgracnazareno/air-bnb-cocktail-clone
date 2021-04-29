@@ -7,9 +7,11 @@
         </div>
     </div>
 
-    <div class="cocktails-banner">
-        <%= image_tag 'pexels-picography-4784.jpg', width:500, height: 500, alt: 'banner', :class=> 'cocktail-banner'%>
-        <h1>Good Sip for Good Moments</h1>
+    <div class="cocktails-banner" style="background-image:url(<%= image_url('pexels-picography-4784.jpg')%>)">
+<%#             <%= image_tag 'pexels-picography-4784.jpg', width:500, height: 500, alt: 'banner', class: "banner-img"%>
+        <div class="cocktails-banner-details" >
+            <h1>Good Sip for Good Moments</h1>
+        </div>
     </div>
 
     <div class="container">
