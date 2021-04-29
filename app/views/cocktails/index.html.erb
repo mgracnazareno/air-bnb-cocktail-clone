@@ -1,24 +1,29 @@
 
-
-<div class="cocktails-header d-flex justify-content-space-around flex-row">
-    <div class="cocktail-header-nav">
-        <%= image_tag "cocktail.png", alt: "logo", width:70, height: 50 %>
-        <%= link_to "Add cocktail", new_cocktail_path %>
-    </div>
-</div>
-
-<div class="cocktails-banner">
-    <%= image_tag 'pexels-picography-4784.jpg', alt: 'banner', width:900, height:500 %>
-</div>
-<div class="main-cocktails">
-    <div class="container">
-            <% @cocktails.each do |cocktail| %>
-        <div class="card">
-            <div class="card-item">
-                <%= link_to cocktail.name, cocktail_path(cocktail) %>
-            </div>
+<div class="main-container">
+    <div class="cocktails-header d-flex justify-content-space-around flex-row">
+        <div class="cocktail-header-nav">
+            <%= image_tag "cocktail.png", alt: "logo", width:70, height: 50 %>
+            <%= link_to "Add cocktail", new_cocktail_path %>
         </div>
     </div>
-     <% end %>
-</div>
 
+    <div class="cocktails-banner">
+        <%= image_tag 'pexels-picography-4784.jpg', width:500, height: 500, alt: 'banner', :class=> 'cocktail-banner'%>
+        <h1>Good Sip for Good Moments</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <% @cocktails.each do |cocktail| %>
+                <div class="card">
+            
+                </div>
+                    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+
+                <div class="card-item">
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+</div>

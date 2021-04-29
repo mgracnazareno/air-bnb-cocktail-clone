@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CocktailsController < ApplicationController
-  before_action :find_cocktail, only: %i[create show]
+  before_action :find_cocktail, only: [:show]
   def index
     @cocktails = Cocktail.all
   end
@@ -13,7 +13,7 @@ class CocktailsController < ApplicationController
   
   def create
     @cocktail = Cocktail.new(cocktail_params)
-    if @cocktail.save!
+    if @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else 
       render :new
