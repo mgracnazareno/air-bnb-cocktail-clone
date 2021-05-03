@@ -8,8 +8,13 @@
 
     <div class="cocktails-banner" style="background-image:url(<%= asset_url('pexels-picography-4784.jpg')%>)">
         <div class="cocktails-banner-details" >
-            <h1>Good Sip for Good Moments</h1>
-            <%= link_to "View All Cocktails", cocktails_path, class:'btn btn-warning' %>
+            <div class="banner-slogan">
+                <h1 class="slogan">Good Sip for Good Moments</h1>
+            </div>
+
+            <div class="banner-link">
+                <%= link_to "View All Cocktails", cocktails_path, class:'btn btn-warning' %>
+            </div>
         </div>
     </div>
 
