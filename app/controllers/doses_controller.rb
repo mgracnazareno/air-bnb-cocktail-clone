@@ -2,7 +2,6 @@ class DosesController < ApplicationController
  def new
   
    @dose = Dose.new
-   @dose = 
  end
  
  def create
@@ -16,6 +15,7 @@ class DosesController < ApplicationController
  
  private
 
+  def find_in
  def dose_params
   params.require(:dose).permit(:description)
  end
