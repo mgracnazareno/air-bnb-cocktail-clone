@@ -2,14 +2,16 @@
   height: 250px;
   width:250px;
   padding: 8px 12px;
-  margin: 12px 24px;
+  margin: 36px 24px;
   border-radius: 8px;
   justify-content: space-between;
   align-content: flex-start;
+  object-fit: cover;
 
   display: flex;
 }
 
-.card-name {
-   
+.cocktail-name {
+   font-size: 24px;
+   text-decoration: none;
 }
