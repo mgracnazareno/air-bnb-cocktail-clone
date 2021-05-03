@@ -1,6 +1,11 @@
+<%= render 'pages/header' %>
+
+<div class="container">
 <h1>Cocktail</h1>
 
 <%= @cocktail.name %>
 
 <%= link_to "back", cocktails_path %>
 <%= link_to "delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure? " } %>
+
+</div>
