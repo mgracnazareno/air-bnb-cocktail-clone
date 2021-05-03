@@ -1,14 +1,12 @@
 
-    <div class="container-cards d-flex justify-content-space-between">
+    <div class="container d-flex justify-content-space-between">
         <div class="cocktails-card">
             <% @cocktails.each do |cocktail| %>
-                <div class="card">
-            
-                </div>
-                    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-
-                <div class="card-item">
-                </div>
+                <%= link_to  cocktail_path(cocktail) do %>
+                    <div class="card">
+                        <p><%= cocktail.name %></p>
+                    </div>
+                <% end %>
             <% end %>
         </div>
     </div>
