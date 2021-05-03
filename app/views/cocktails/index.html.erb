@@ -3,7 +3,7 @@
         <div class="cocktails-card d-flex justify-content-space-between">
             <% @cocktails.each do |cocktail| %>
                 <%= link_to cocktail_path(cocktail) do %>
-                    <div class="card">
+                    <div class="card" style="background-image: url(<%= asset_url('https://source.unsplash.com/500x400/?cocktail')%>">
                         <p class="cocktail-name"><%= cocktail.name %></p>
                     </div>
                 <% end %>
