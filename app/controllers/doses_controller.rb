@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class DosesController < ApplicationController
-  before_action :find_cocktail
+  before_action :find_cocktail, only: [:new, :create]
 
   def new
     @dose = Dose.new
