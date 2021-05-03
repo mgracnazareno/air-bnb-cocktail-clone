@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="cocktails-header d-flex justify-content-space-around flex-row">
+  <div class="cocktail-header-nav">
+      <%= image_tag "cocktail.png", alt: "logo", width:70, height: 50 %>
+      <%= link_to "Add cocktail", new_cocktail_path %>
+  </div>
+</div>
+<div class="cocktails-banner" style="background-image:url(<%= asset_url('pexels-picography-4784.jpg')%>)">
+  <div class="container-banner" >
+    <h1 class="slogan">Good Sip for Good Moments</h1>
+    <%= link_to "View All Cocktails", cocktails_path, class:'btn btn-warning' %>
+  </div>
+</div>
